@@ -6,7 +6,7 @@
   <title>Моя визитка</title>
 
   <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Было: styles.css, стало: style.css -->
 </head>
 <body>
   <main class="card">
@@ -31,7 +31,7 @@
       <li>Спорт</li>
 
       <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? -->
-      <li>Готовка</li>
+      <li>Готовка</li> <!-- Было: <il>, стало: <li> -->
 
       <li>Фотография</li>
 
@@ -41,7 +41,7 @@
     <div class="actions">
       <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
            Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). -->
-      <button id="contactBtn" class="btn">Показать контакт</button>
+      <button id="contactBtn" class="btn">Показать контакт</button> <!-- Было: contact-btn, стало: contactBtn -->
 
       <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
     </div>
